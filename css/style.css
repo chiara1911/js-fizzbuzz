@@ -8,22 +8,27 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
-    
+    background-color: var(--color-bg-body);
 }
 #boxWrapper{
     width: 1000px;
     height: 1000px;
     margin: 20px auto;
-    background-color: var(--color-bg-body);
+   
     
 }
 
 .box{
     width: 80px;
     height: 80px;
-    border:1px solid black;
+    border-radius: 15%;
     margin: 10px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: center;
 }
+
 
 .number{
     background-color: var(--color-bg-blue);

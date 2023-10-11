@@ -7,25 +7,28 @@ for (let i = 1; i < 101; i++) {
     //istruzioni da ripetere
     console.log(i);
 let bgBox;
+const boxEl = document.createElement('div');
+    
     // se divisibile per 3 e 5
     if (i % 3 === 0 && i % 5 === 0) {
 
         bgBox = 'fizzbuzz' ;
-        // Text = fizzbuzz;
+        boxEl.innerHTML = ' Fizzbuzz';
     } else if (i % 5 === 0) {
 
          bgBox = 'buzz';
-        // Text = buzz;
+         boxEl.innerHTML = ' Buzz';
     } else if (i % 3 === 0) {
 
         bgBox = 'fizz';
-        // text = fizz;
+        boxEl.innerHTML = ' Fizz';
 
     } else {
        bgBox = 'number';
-        //    text = i;
+       boxEl.innerHTML = i;
     }
-    const boxEl = document.createElement('div');
     boxEl.className = `box ${bgBox}`;
     wrapperEl.append(boxEl);
+    
+
 }
