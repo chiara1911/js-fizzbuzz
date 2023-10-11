@@ -36,17 +36,17 @@ for (let i = 1; i < 101; i++) {
 
         bgBox = 'fizz';
         boxEl.innerHTML = ' Fizz';
-// divisibile per 2
+        // divisibile per 2
     } else if (i % 2 === 0) {
         bgBox = 'two';
         boxEl.innerHTML = ' Two';
     }
-    //numero senza divisori
+    //numero primi
     else {
         bgBox = 'number';
-        boxEl.innerHTML = i;
+        boxEl.innerHTML = ' primi';
     }
-    boxEl.className = `box ${bgBox} d-flex justify-content-center align-items-center fw-semibold`;
+    boxEl.className = `box ${bgBox} d-flex justify-content-center align-items-center fw-semibold text-uppercase `;
     wrapperEl.append(boxEl);
 
 
