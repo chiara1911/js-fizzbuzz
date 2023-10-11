@@ -11,15 +11,32 @@ body{
     
 }
 #boxWrapper{
-    width: 700px;
-    height: 700px;
-    margin: 50px auto;
+    width: 1000px;
+    height: 1000px;
+    margin: 20px auto;
     background-color: var(--color-bg-body);
     
 }
 
 .box{
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     border:1px solid black;
+    margin: 10px;
+}
+
+.number{
+    background-color: var(--color-bg-blue);
+}
+/* divisibile x 3 */
+.fizz{
+    background-color: var(--color-bg-fizz);
+}
+/* divisibile x  5 */
+.buzz{
+    background-color: var(--color-bg-buzz);
+}
+/* divisibile x 3 e 5 */
+.fizzbuzz{
+    background-color: var(--color-bg-fizzbuzz);
 }
